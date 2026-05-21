@@ -17,24 +17,6 @@ Tunify is a content-based music recommender built with Python and Streamlit. It 
 2. **Similarity** — A cosine similarity matrix is computed across all songs and saved to disk.
 3. **Recommendation** — When you pick a song, Tunify looks up its row in the similarity matrix and returns the top 5 closest matches.
 
----
-
-## Project Structure
-
-```
-tunify/
-├── main.py             # Streamlit UI
-├── preprocess.py       # Data cleaning, TF-IDF vectorization & similarity computation
-├── recommend.py        # Recommendation logic
-├── spotify_millsongdata.csv   # Source dataset (not included — see below)
-├── df_cleaned.pkl      # Preprocessed DataFrame (generated)
-├── tfidf_matrix.pkl    # TF-IDF matrix (generated)
-├── cosine_sim.pkl      # Cosine similarity matrix (generated)
-├── preprocess.log      # Preprocessing run log (generated)
-└── recommend.log       # Recommendation run log (generated)
-```
-
----
 
 
  Add the dataset
